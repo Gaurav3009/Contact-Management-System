@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org" th:replace = "normal/base::Layout(~{::section})">
+<head>
+	<meta charset="UTF-8" />
+	<title>Contact Manger</title>
+</head>
+<body>
+	<section>
+	
+	
+		<div class="card">
+		
+			<div class="card-body d-flex flex-column align-items-center">
+			
+				<div style = "display: flex; flex-direction: column; align-items: center;">
+					
+					<div>
+						<h1 style = "font-size: 60px;" th:text = "${user.name}"></h1>
+					</div>
+					
+					<div>
+						<i style = "font-size: 40px;color: grey; font-weight: 150;">Start saving your contacts in a better way</i>
+					</div>
+				</div>
+				
+				
+				<table class="table mt-5" style = "width: 70%;">
+				  <tbody>
+				  	<tr>
+				      <th scope="row">Name</th>
+				      <td th:text = "${user.name}"></td>
+				    </tr>
+				    <tr>
+				      <th scope="row">Email</th>
+				      <td th:text = "${user.email}"></td>
+				    </tr>
+				    <tr>
+				      <th scope="row">Role</th>
+				      <td 
+				      th:text = "${user.role == 'ROLE_USER' ? 'USER' : 'ADMIN'}" 
+				      th:style="'color: ' + (${user.role} == 'ROLE_USER' ? 'blue' : 'red')"></td>
+				    </tr>
+				    <tr>
+				      <th scope="row">Description</th>
+				      <td th:text = "${user.about}"></td>
+				    </tr>
+				  </tbody>
+				</table>
+				
+				<div class="container mt-5">
+				
+					
+				
+				</div>
+				
+			</div>
+		
+		</div>
+	
+	
+	</section>
+</body>
+</html>
