@@ -32,7 +32,7 @@ To run this project on your system, follow these steps:
    ```
 
 5. **Access the application**:
-  - Open your web browser and go to [http://localhost:8080](http://localhost:8282) to use the contact management application.
+  - Open your web browser and go to [http://localhost:8282](http://localhost:8282) to use the contact management application.
   - Change the Database setting as per your system and the database settings in the applicaiton.properties file.
 
 6. **Login to the application**:
