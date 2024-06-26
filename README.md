@@ -32,16 +32,17 @@ To run this project on your system, follow these steps:
    ```
 
 5. **Access the application**:
-   Open your web browser and go to [http://localhost:8080](http://localhost:8080) to use the contact management application.
+  - Open your web browser and go to [http://localhost:8080](http://localhost:8282) to use the contact management application.
+  - Change the Database setting as per your system and the database settings in the applicaiton.properties file.
 
 6. **Login to the application**:
-   Use the default login credentials:
-   - Username: admin
-   - Password: password
+   -Create the user first:
+   
 
 ## Technologies Used
 - Spring Boot
 - Thymeleaf
 - Spring Security
+- MySQL
 
 Feel free to explore and customize the application as needed. If you encounter any issues, refer to the project's documentation or reach out to the project maintainers for assistance.  
